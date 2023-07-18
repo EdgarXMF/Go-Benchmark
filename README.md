@@ -4,7 +4,7 @@ This repository contains the resolution to a series of proposed tasks ([jig/benc
 
 ## Task 1: Performance Testing with Apache's ab
 
-For the first task we have used as web server a [load balancer](https://github.com/EdgarXavier/GO-Benchmark/tree/main/nginxLoadBalancer) made with nginx and 5 services deployed with docker compose.
+For the first task we have used as web server a [load balancer](https://github.com/EdgarXMF/Go-Benchmark/tree/main/nginxLoadBalancer) made with nginx and 5 services deployed with docker compose.
 The measurements have been performed using 2 computers with 4 cores each, connected in the same network, and both using virtualization. 
 
 Running the `apache benchmark tool`, the average latency values obtained are different using the same concurrency configuration and number of messages sent, because one of the computers is connected to a wifi network which is unstable, but the values remain between 200 and 600 ms.
