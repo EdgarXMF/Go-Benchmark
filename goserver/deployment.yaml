@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goserver-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: goserver
+  template:
+    metadata:
+      labels:
+        app: goserver
+    spec:
+      containers:
+        - name: goserver
+          image: localhost:5000/goserver
+          ports:
+            - containerPort: 80
+            - containerPort: 443
