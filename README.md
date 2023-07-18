@@ -16,7 +16,7 @@ When checking the cpu load of the computer that contains the server, we can see 
 
 For the second task, a reduced version of the ab tool has been implemented with the `-c` `-k` `-n` flags in `Go` and tested with the load balancer mentioned above. This program has also been `dockerized`. 
 
-This [goab](https://github.com/EdgarXavier/GO-Benchmark/tree/main/goab) makes requests with HTTP/1.1 since `Go` does not allow the use of HTTP/1.0 as `ab` does.
+This [goab](https://github.com/EdgarXMF/Go-Benchmark/tree/main/goab) makes requests with HTTP/1.1 since `Go` does not allow the use of HTTP/1.0 as `ab` does.
  
 In this case some of the results comparing `ab` and `goab` would be:
 
@@ -48,7 +48,7 @@ In comparison with the ab tool, we can see that using the same values in the `-n
 
 ## Task 3: HTTP Server Benchmarking
 
-A [server](https://github.com/EdgarXavier/GO-Benchmark/tree/main/goserver) has been implemented in go that allows access with https and http (port 80) that redirects to https (port 443).
+A [server](https://github.com/EdgarXMF/Go-Benchmark/tree/main/goserver) has been implemented in go that allows access with https and http (port 80) that redirects to https (port 443).
 
 This server is `dockerized` and can also be deployed with `kubernetes`.
 
